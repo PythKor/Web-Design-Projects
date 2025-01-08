@@ -1,0 +1,142 @@
+body{
+    font-family: helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tealogo{
+    width: 150px;
+    height: 50px;
+    margin-left: 10px;  
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.nav{
+    display: flex;
+    
+}
+.nav a{
+    text-decoration: underline;
+    color: gray;
+    
+}
+.breadcrumbs li{
+    display: inline;
+}
+
+.mission {
+    position: relative;
+    text-align: center;
+}
+
+.missimg {
+    width: 95%;
+    height: 700px;
+    border-bottom: 1px solid seagreen;
+}
+.mission h2{
+    position: absolute; /* Τοποθετεί το h2 πάνω από την εικόνα */
+    top: 50%; /* Τοποθετεί το h2 κάθετα στο κέντρο */
+    left: 50%; /* Τοποθετεί το h2 οριζόντια στο κέντρο */
+    transform: translate(-50%, -50%); /* Κεντράρει το h2 ακριβώς στο κέντρο */
+    z-index: 4; /* Βάζει το h2 πάνω από την εικόνα */
+    color: white; /* Χρώμα κειμένου */
+    background-color: black ;
+    width: 100%;;
+       
+}
+.mission h4 {
+    position: absolute; /* Τοποθετεί το h4 πάνω από την εικόνα */
+    top: 52.5%; /* Τοποθετεί το h2 κάθετα στο κέντρο */
+    left: 50%; /* Τοποθετεί το h4 οριζόντια στο κέντρο */
+    transform: translateX(-50%); /* Κεντράρει το h4 οριζόντια */
+    z-index: 4; /* Βάζει το h4 πάνω από την εικόνα */
+    color: white; /* Χρώμα κειμένου */
+    background-color: black ;
+    width: 100%;;
+}
+.teaofmonth h2, .teaofmonth h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.teacontainer {
+    display: inline-flex;
+    flex-wrap: wrap; /* Επιτρέπει στα στοιχεία να μετακινούνται στην επόμενη γραμμή */
+    justify-content: center; /* Στοιχίζει τα στοιχεία στο κέντρο οριζόντια */
+    align-items: center; /* Στοιχίζει τα στοιχεία στο κέντρο κάθετα */
+    gap: 20px;
+}
+.tea img{
+    height: 200px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tea h3{
+    margin-top: 10px;
+}
+.locations {
+    position: relative; /* Κάνει τη θέση της εικόνας και του κειμένου "relative" για να λειτουργεί το absolute */
+    text-align: center; 
+}
+
+.loc{
+    height: 500px;
+    width: 95%;
+}
+
+.list li{
+    display: block;
+    background-color: black;
+    opacity: 1 ;
+    margin-top: 20px;
+    
+}
+.list{
+    background-color:black;
+    width: 300px ;
+    height: 300px;
+    text-align: left;
+    margin-right: 40px;
+    
+}
+
+.locations h2{
+    position: absolute; /* Κάνει το h2 να είναι απόλυτα τοποθετημένο πάνω στην εικόνα */
+    top: 2%; /* Το τοποθετεί περίπου στο 40% του ύψους της εικόνας */
+    left: 50%; /* Το τοποθετεί στο κέντρο του πλάτους */
+    transform: translateX(-50%) translateY(-50%); /* Κεντράρει ακριβώς το κείμενο πάνω στην εικόνα */
+    color: gray;
+    
+}   
+.listofloc {
+    position: absolute; /* Απόλυτη τοποθέτηση του block με τις λίστες */
+    top: 20%; /* Τοποθετεί το block των λιστών λίγο κάτω από τον τίτλο */
+    left: 50%; /* Τοποθέτηση στο κέντρο οριζόντια */
+    transform: translateX(-50%); /* Κεντράρισμα */
+    display: flex; /* Χρησιμοποιεί το flexbox για να τα τοποθετήσει δίπλα-δίπλα */
+    justify-content: space-between; /* Δημιουργεί χώρο μεταξύ των λιστών */
+    width: 80%; /* Ορίζει το πλάτος του block των λιστών */
+    
+}
+
+.contact{
+    text-align: center;
+}
+
+footer{
+    text-align: left;
+}

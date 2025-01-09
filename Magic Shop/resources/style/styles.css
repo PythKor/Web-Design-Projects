@@ -2,12 +2,14 @@ html{
     font-size: 16px;
 }
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  max-width: 1200px; /* Ορίζουμε το μέγιστο πλάτος για να μην είναι υπερβολικά μεγάλο το περιεχόμενο */
+  margin: 0 auto; /* Κεντράρισμα του περιεχομένου */
+}
   
   /* Στυλ για τους τίτλους */
   h1, h2, h3 {
@@ -18,8 +20,11 @@ body {
   
   /* Στυλ για τις παραγράφους */
   p {
-    line-height: 1.6;
-    margin: 10px 0;
+    margin: 0;            /* Αφαιρεί την εξωτερική απόσταση */
+    padding: 0;           /* Αφαιρεί την εσωτερική απόσταση */
+    line-height: 1.2;     /* Μειώνει την απόσταση μεταξύ των γραμμών του κειμένου */
+    font-size: 1rem;
+    
 
   }
   
@@ -239,10 +244,77 @@ body {
 .hero{
     width: 100%;
     background-color: #333;
+    
 }  
 .hero h1{
     color: white;
     text-align: center;
     padding: 5px;
 }
-  
+/* Στυλ για κινητά */
+@media (max-width: 768px) {
+  body {
+      font-size: 14px; /* Μικρότερο μέγεθος γραμματοσειράς για καλύτερη ανάγνωση σε μικρές οθόνες */
+  }
+
+  header {
+      flex-direction: column; /* Οι εικονίδια και το μενού θα τοποθετούνται κάθετα */
+      align-items: center;
+  }
+
+  .social-icons {
+      text-align: center; /* Κεντράρει τα social icons */
+      margin-top: 10px; /* Προσθέτει λίγο περιθώριο */
+  }
+
+  .banner img {
+      height: auto; /* Προσαρμόζει το ύψος της εικόνας στην οθόνη */
+  }
+
+  .services, .team {
+      flex-direction: column; /* Κάνει τα στοιχεία να στοιχίζονται κατακόρυφα */
+      align-items: center;
+  }
+
+  .service, .person {
+      width: 100%; /* Τα αντικείμενα γεμίζουν το πλάτος της οθόνης */
+      margin-bottom: 20px; /* Προσθέτει απόσταση για να μη στριμώχνονται */
+  }
+
+  nav ul {
+      padding: 0;
+      text-align: center; /* Κεντράρει το μενού */
+  }
+
+  nav ul li {
+      display: block; /* Κάνει τα στοιχεία του μενού να εμφανίζονται το ένα κάτω από το άλλο */
+      margin-bottom: 10px;
+  }
+}
+
+/* Στυλ για πολύ μικρές οθόνες (π.χ. κινητά) */
+@media (max-width: 480px) {
+  body {
+      font-size: 12px; /* Μικρότερο μέγεθος γραμματοσειράς */
+  }
+
+  header {
+      padding: 10px;
+  }
+
+  .social-icons {
+      margin-top: 10px;
+  }
+
+  .banner h2 {
+      font-size: 1.5rem; /* Μειώνει το μέγεθος του κειμένου για καλύτερη εμφάνιση */
+  }
+
+  .footer-content {
+      font-size: 0.9rem; /* Μειώνει το μέγεθος της γραμματοσειράς στο footer */
+  }
+
+  .footer-content ul li {
+      font-size: 1rem; /* Μειώνει το μέγεθος γραμματοσειράς στη λίστα */
+  }
+}

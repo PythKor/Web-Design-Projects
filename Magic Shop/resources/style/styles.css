@@ -133,6 +133,7 @@ body {
     border-radius: 8px;
     padding: 20px;
     text-align: center;
+    
   }
 
 .service h3 {
@@ -171,6 +172,7 @@ body {
     gap: 30px; /* Adds space between the team members */
     justify-content: center; /* Centers the team members horizontally */
     padding: 20px;
+    margin: 20px;
   }
   
   /* Style for each person box */
@@ -181,15 +183,17 @@ body {
     border-radius: 8px;
     padding: 20px;
     width: 200px; /* Set a fixed width for each person */
+    max-height: 400px;
+    margin-bottom: 5px; /* Ρύθμιση του περιθωρίου κάτω από το <p> */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
   }
   
  /* Style for the person's image */
  .person-image {
     width: 100%; /* Makes the image fill the width of the container */
-    height: 60%; /* Maintains the aspect ratio */
+    height: 50%; /* Maintains the aspect ratio */
     border-radius: 50%; /* Makes the image round */
-    margin-bottom: 15px; /* Adds space between the image and the name */
+    margin-bottom: 10px; /* Adds space between the image and the name */
   }
   
   /* Style for the person's name */
@@ -201,10 +205,12 @@ body {
   
   /* Style for the person's description */
   .person p {
-    color: #7f8c8d;
+    color: #95a5a6; /* Ανοιχτό γκρι */
     font-size: 1em;
     font-style: italic;
-  } 
+    margin-bottom: 5px;
+}
+ 
   .footer {
     background-color: #2f2f2f; /* Σκούρο φόντο για το footer */
     color: #ffffff; /* Λευκό κείμενο */
@@ -270,6 +276,9 @@ body {
   .banner img {
       height: auto; /* Προσαρμόζει το ύψος της εικόνας στην οθόνη */
   }
+  .person img{
+    max-height: 250px;
+  }
 
   .services, .team {
       flex-direction: column; /* Κάνει τα στοιχεία να στοιχίζονται κατακόρυφα */
@@ -290,6 +299,7 @@ body {
       display: block; /* Κάνει τα στοιχεία του μενού να εμφανίζονται το ένα κάτω από το άλλο */
       margin-bottom: 10px;
   }
+  
 }
 
 /* Στυλ για πολύ μικρές οθόνες (π.χ. κινητά) */
@@ -317,4 +327,5 @@ body {
   .footer-content ul li {
       font-size: 1rem; /* Μειώνει το μέγεθος γραμματοσειράς στη λίστα */
   }
+  
 }
